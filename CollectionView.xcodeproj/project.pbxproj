@@ -14,6 +14,7 @@
 		2B96D0551DC11BD40090FEF3 /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D0541DC11BD40090FEF3 /* CollectionViewTests.swift */; };
 		2B96D0601DC11BD40090FEF3 /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D05F1DC11BD40090FEF3 /* CollectionViewUITests.swift */; };
 		2B96D0761DC11DB80090FEF3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D0751DC11DB80090FEF3 /* CollectionViewController.swift */; };
+		2B96D0781DC13C520090FEF3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D0771DC13C520090FEF3 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2B96D05F1DC11BD40090FEF3 /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
 		2B96D0611DC11BD40090FEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B96D0751DC11DB80090FEF3 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2B96D0771DC13C520090FEF3 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2B96D0481DC11BD40090FEF3 /* LaunchScreen.storyboard */,
 				2B96D04B1DC11BD40090FEF3 /* Info.plist */,
 				2B96D0751DC11DB80090FEF3 /* CollectionViewController.swift */,
+				2B96D0771DC13C520090FEF3 /* CustomCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B96D0761DC11DB80090FEF3 /* CollectionViewController.swift in Sources */,
+				2B96D0781DC13C520090FEF3 /* CustomCell.swift in Sources */,
 				2B96D0401DC11BD40090FEF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
