@@ -28,20 +28,30 @@
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="333"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuY-4L-ITc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuY-4L-ITc">
+                                            <frame key="frameInset" minX="180" minY="156.5" width="42" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdH-oR-egz">
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="OaR-x1-OFi"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="EuY-4L-ITc" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leading" constant="180" id="0UB-0c-bmE"/>
-                                    <constraint firstItem="EuY-4L-ITc" firstAttribute="centerY" secondItem="lzK-sN-jFj" secondAttribute="centerY" id="2Hy-9f-SD6"/>
+                                    <constraint firstItem="vdH-oR-egz" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leading" id="Btj-xS-ckI"/>
+                                    <constraint firstAttribute="trailing" secondItem="vdH-oR-egz" secondAttribute="trailing" id="Fn2-g2-hdw"/>
+                                    <constraint firstItem="vdH-oR-egz" firstAttribute="top" secondItem="lzK-sN-jFj" secondAttribute="top" id="oiy-6e-Rxi"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <size key="customSize" width="341" height="333"/>
                                 <connections>
+                                    <outlet property="headerView" destination="vdH-oR-egz" id="pEv-z6-JYO"/>
                                     <outlet property="title" destination="EuY-4L-ITc" id="opb-cD-FzI"/>
                                 </connections>
                             </collectionViewCell>
@@ -54,7 +64,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7E-ab-adb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="-221.73913043478262"/>
+            <point key="canvasLocation" x="-325.60000000000002" y="-244.22788605697153"/>
         </scene>
     </scenes>
 </document>

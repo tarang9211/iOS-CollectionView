@@ -11,8 +11,10 @@ import UIKit
 class CustomCell: UICollectionViewCell {
     
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var headerView: UIView!
     
     func setUpCell() {
+ 
         self.backgroundColor = UIColor.white
         self.layer.cornerRadius = 5
         self.layer.masksToBounds = false
@@ -20,15 +22,11 @@ class CustomCell: UICollectionViewCell {
         self.layer.shadowOffset = CGSize(width: 0, height: 5)
         self.layer.shadowOpacity = 0.2
         
-        setUpHeaderView()
+        self.setUpHeaderView()
     }
     
     func setUpHeaderView() {
-        let headerView = UIView()
-        headerView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height * 0.25)
-        headerView.backgroundColor = UIColor.red
         self.clipsToBounds = true
-        self.contentView.addSubview(headerView)
     }
     
 }
