@@ -39,6 +39,10 @@ class CollectionViewController: UICollectionViewController {
         cell.title.text = String(items[indexPath.item])
         cell.backgroundColor = UIColor.cyan
         cell.layer.cornerRadius = 5
+        cell.layer.masksToBounds = false
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 5)
+        cell.layer.shadowOpacity = 0.2
         
         return cell
     }
@@ -48,13 +52,13 @@ class CollectionViewController: UICollectionViewController {
         let customLayout = UICollectionViewFlowLayout()
         self.collectionView?.collectionViewLayout = customLayout
         
-        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 20, right: 25)
+        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 40, right: 25)
         let screenSize: CGRect = UIScreen.main.bounds
         
         let screenWidth = screenSize.width * 0.85
-        let screenHeight = screenSize.height * 0.5
+        let screenHeight = screenSize.height * 0.7
         
         customLayout.itemSize = CGSize(width: screenWidth, height: screenHeight)
-        customLayout.minimumLineSpacing = 10
+        customLayout.minimumLineSpacing = 15
     }
 }
