@@ -36,7 +36,6 @@ class CollectionViewController: UICollectionViewController {
         //get reference to storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
         
-        cell.title.text = String(items[indexPath.item])
         cell.setUpCell()        
         return cell
     }
