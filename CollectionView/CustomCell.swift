@@ -14,11 +14,8 @@ class CustomCell: UICollectionViewCell {
     @IBOutlet weak var headerView: UIView!
     
     @IBOutlet weak var imageviewWidth: NSLayoutConstraint!
-    
     @IBOutlet weak var imageviewHeight: NSLayoutConstraint!
-    
     @IBOutlet weak var imageviewtopconstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var imageviewleftconstraint: NSLayoutConstraint!
     
     func setUpCell() {
@@ -45,6 +42,7 @@ class CustomCell: UICollectionViewCell {
         
     }
     
+    //set up gradient for header view
     private func createGradient() {
         let customGradient = CAGradientLayer()
         let colorOne = UIColor(red: 255/255, green: 138/255, blue: 150/255, alpha: 1).cgColor
@@ -57,11 +55,10 @@ class CustomCell: UICollectionViewCell {
         self.headerView.layer.insertSublayer(customGradient, at: 0)
     }
     
+    //setting up constraints for imageview for a profile image
     private func setupImageView() {
-        
         imageviewHeight.constant = self.frame.height * 0.10
         imageviewWidth.constant = imageviewHeight.constant
-        
         imageviewtopconstraint.constant = -(imageviewHeight.constant * 0.50)
         imageviewleftconstraint.constant = imageviewWidth.constant - (imageviewHeight.constant * 0.50)
         self.updateConstraints()
