@@ -27,8 +27,23 @@ class CustomCell: UICollectionViewCell {
         
         //set up for header view
         self.headerViewHeightConstraint.constant = self.frame.height * 0.25
-        self.headerView.backgroundColor = UIColor.red
         self.updateConstraints()
+        
+        //set up for adding gradient
+        self.createGradient()
+        
+    }
+    
+    private func createGradient() {
+        let customGradient = CAGradientLayer()
+        let colorOne = UIColor(red: 255/255, green: 138/255, blue: 150/255, alpha: 1).cgColor
+        let colorTwo = UIColor(red: 255/255, green: 0/255, blue: 102/255, alpha: 1).cgColor
+        customGradient.colors = [colorOne, colorTwo]
+        customGradient.locations = [0.0, 0.5, 1.0]
+        customGradient.startPoint = CGPoint(x: 0.0, y: 1.0)
+        customGradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        customGradient.frame = self.headerView.bounds
+        self.headerView.layer.insertSublayer(customGradient, at: 0)
     }
     
 }
