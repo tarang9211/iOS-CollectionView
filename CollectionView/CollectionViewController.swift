@@ -52,7 +52,7 @@ class CollectionViewController: UICollectionViewController {
         let customLayout = UICollectionViewFlowLayout()
         self.collectionView?.collectionViewLayout = customLayout
         
-        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 40, right: 25)
+        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 15, right: 25)
         let screenSize: CGRect = UIScreen.main.bounds
         
         let screenWidth = screenSize.width * 0.85
