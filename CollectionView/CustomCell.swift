@@ -62,8 +62,8 @@ class CustomCell: UICollectionViewCell {
         imageviewHeight.constant = self.frame.height * 0.10
         imageviewWidth.constant = imageviewHeight.constant
         
-        imageviewtopconstraint.constant = 0 - (imageviewHeight.constant * 0.50)
-        imageviewleftconstraint.constant = imageviewWidth.constant
+        imageviewtopconstraint.constant = -(imageviewHeight.constant * 0.50)
+        imageviewleftconstraint.constant = imageviewWidth.constant - (imageviewHeight.constant * 0.50)
         self.updateConstraints()
         
     }
