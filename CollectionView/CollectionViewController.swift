@@ -37,7 +37,7 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
         
         cell.title.text = String(items[indexPath.item])
-        cell.backgroundColor = UIColor.cyan
+        cell.backgroundColor = UIColor.white
         cell.layer.cornerRadius = 5
         cell.layer.masksToBounds = false
         cell.layer.shadowColor = UIColor.black.cgColor
@@ -59,6 +59,6 @@ class CollectionViewController: UICollectionViewController {
         let screenHeight = screenSize.height * 0.7
         
         customLayout.itemSize = CGSize(width: screenWidth, height: screenHeight)
-        customLayout.minimumLineSpacing = 15
+        customLayout.minimumLineSpacing = 20
     }
 }
