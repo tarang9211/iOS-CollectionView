@@ -11,8 +11,15 @@ import UIKit
 class CustomCell: UICollectionViewCell {
     
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var headerView: UIView!
+    
+    @IBOutlet weak var imageviewWidth: NSLayoutConstraint!
+    
+    @IBOutlet weak var imageviewHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var imageviewtopconstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var imageviewleftconstraint: NSLayoutConstraint!
     
     func setUpCell() {
  
@@ -32,6 +39,12 @@ class CustomCell: UICollectionViewCell {
         //set up for adding gradient
         self.createGradient()
         
+        setupImageView()
+        
+        
+        
+        
+        
     }
     
     private func createGradient() {
@@ -45,5 +58,19 @@ class CustomCell: UICollectionViewCell {
         customGradient.frame = self.headerView.bounds
         self.headerView.layer.insertSublayer(customGradient, at: 0)
     }
+    
+    private func setupImageView() {
+        
+        imageviewHeight.constant = self.frame.height * 0.10
+        imageviewWidth.constant = imageviewHeight.constant
+        
+        imageviewtopconstraint.constant = self.frame.height * 0.25
+        imageviewleftconstraint.constant = imageviewWidth.constant
+        self.updateConstraints()
+        
+        
+    }
+    
+    
     
 }
