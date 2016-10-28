@@ -16,6 +16,8 @@ class CollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.customLayout()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,5 +40,19 @@ class CollectionViewController: UICollectionViewController {
         cell.backgroundColor = UIColor.cyan
         
         return cell
+    }
+    
+    private func customLayout() {
+        let customLayout = UICollectionViewFlowLayout()
+        self.collectionView?.collectionViewLayout = customLayout
+        
+        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 15, right: 25)
+        let screenSize: CGRect = UIScreen.main.bounds
+        
+        let screenWidth = screenSize.width * 0.85
+        let screenHeight = screenSize.height * 0.5
+        
+        customLayout.itemSize = CGSize(width: screenWidth, height: screenHeight)
+        customLayout.minimumLineSpacing = 10
     }
 }
