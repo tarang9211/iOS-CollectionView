@@ -52,6 +52,7 @@
                                 <size key="customSize" width="341" height="333"/>
                                 <connections>
                                     <outlet property="headerView" destination="vdH-oR-egz" id="pEv-z6-JYO"/>
+                                    <outlet property="headerViewHeightConstraint" destination="OaR-x1-OFi" id="yQU-EM-QOY"/>
                                     <outlet property="title" destination="EuY-4L-ITc" id="opb-cD-FzI"/>
                                 </connections>
                             </collectionViewCell>
