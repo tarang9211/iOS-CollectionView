@@ -18,6 +18,7 @@ class CollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         self.customLayout()
+        self.collectionView?.backgroundColor = UIColor.init(red: 236/255, green: 239/255, blue: 241/255, alpha: 1)
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,18 +36,19 @@ class CollectionViewController: UICollectionViewController {
         //get reference to storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
         
-        //set title of each cell
         cell.title.text = String(items[indexPath.item])
         cell.backgroundColor = UIColor.cyan
+        cell.layer.cornerRadius = 5
         
         return cell
     }
     
+    //this sets up a custom layout
     private func customLayout() {
         let customLayout = UICollectionViewFlowLayout()
         self.collectionView?.collectionViewLayout = customLayout
         
-        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 15, right: 25)
+        customLayout.sectionInset = UIEdgeInsets(top: 15, left: 25, bottom: 20, right: 25)
         let screenSize: CGRect = UIScreen.main.bounds
         
         let screenWidth = screenSize.width * 0.85
