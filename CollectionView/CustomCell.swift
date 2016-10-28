@@ -36,14 +36,12 @@ class CustomCell: UICollectionViewCell {
         self.headerViewHeightConstraint.constant = self.frame.height * 0.25
         self.updateConstraints()
         
-        //set up for adding gradient
-        self.createGradient()
-        
+        //set up image view
         setupImageView()
         
         
-        
-        
+        //set up for adding gradient
+        self.createGradient()
         
     }
     
@@ -64,10 +62,9 @@ class CustomCell: UICollectionViewCell {
         imageviewHeight.constant = self.frame.height * 0.10
         imageviewWidth.constant = imageviewHeight.constant
         
-        imageviewtopconstraint.constant = self.frame.height * 0.25
+        imageviewtopconstraint.constant = 0 - (imageviewHeight.constant * 0.50)
         imageviewleftconstraint.constant = imageviewWidth.constant
         self.updateConstraints()
-        
         
     }
     

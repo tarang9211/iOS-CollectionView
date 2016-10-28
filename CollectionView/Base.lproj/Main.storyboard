@@ -35,7 +35,8 @@
                                                 <constraint firstAttribute="height" constant="128" id="OaR-x1-OFi"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-jT-9nx">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-jT-9nx">
+                                            <frame key="frameInset" minX="33" minY="131" width="50" height="50"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="WKr-ch-ELR"/>
@@ -45,9 +46,9 @@
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="DBg-jT-9nx" firstAttribute="top" secondItem="vdH-oR-egz" secondAttribute="bottom" id="4Xl-B4-RIk"/>
                                     <constraint firstItem="vdH-oR-egz" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leading" id="Btj-xS-ckI"/>
                                     <constraint firstAttribute="trailing" secondItem="vdH-oR-egz" secondAttribute="trailing" id="Fn2-g2-hdw"/>
-                                    <constraint firstItem="DBg-jT-9nx" firstAttribute="top" secondItem="lzK-sN-jFj" secondAttribute="topMargin" constant="98" id="fIw-O1-Cgo"/>
                                     <constraint firstItem="vdH-oR-egz" firstAttribute="top" secondItem="lzK-sN-jFj" secondAttribute="top" id="oiy-6e-Rxi"/>
                                     <constraint firstItem="DBg-jT-9nx" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leadingMargin" constant="26" id="xPd-eR-14m"/>
                                 </constraints>
@@ -59,7 +60,7 @@
                                     <outlet property="imageviewHeight" destination="XY0-ju-SRQ" id="pPb-l4-1YF"/>
                                     <outlet property="imageviewWidth" destination="WKr-ch-ELR" id="7Pi-yQ-0xN"/>
                                     <outlet property="imageviewleftconstraint" destination="xPd-eR-14m" id="ojX-BN-AKe"/>
-                                    <outlet property="imageviewtopconstraint" destination="fIw-O1-Cgo" id="Dlc-rn-wvN"/>
+                                    <outlet property="imageviewtopconstraint" destination="4Xl-B4-RIk" id="mfq-O3-Xzc"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
