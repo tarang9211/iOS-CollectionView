@@ -37,13 +37,7 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
         
         cell.title.text = String(items[indexPath.item])
-        cell.backgroundColor = UIColor.white
-        cell.layer.cornerRadius = 5
-        cell.layer.masksToBounds = false
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOffset = CGSize(width: 0, height: 5)
-        cell.layer.shadowOpacity = 0.2
-        
+        cell.setUpCell()        
         return cell
     }
     
