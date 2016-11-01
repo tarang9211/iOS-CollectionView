@@ -28,14 +28,12 @@ class CustomCell: UICollectionViewCell {
         
         //set up for header view
         self.headerViewHeightConstraint.constant = self.frame.height * 0.25
-        self.updateConstraints()
         
-        //set up image view
-        setUpImageView()
+        self.setUpImageView()
         
-        
-        //set up for adding gradient
         self.createGradient()
+        
+        self.setNeedsLayout()
         
     }
     
@@ -52,23 +50,13 @@ class CustomCell: UICollectionViewCell {
         self.headerView.layer.insertSublayer(customGradient, at: 0)
     }
     
-    //setting up constraints for imageview for a profile image
-//    private func setupImageView() {
-//        imageviewHeight.constant = self.frame.height * 0.10
-//        imageviewWidth.constant = imageviewHeight.constant
-//        imageviewtopconstraint.constant = -(imageviewHeight.constant * 0.50)
-//        imageviewleftconstraint.constant = imageviewWidth.constant - (imageviewHeight.constant * 0.50)
-//        self.updateConstraints()
-//        
-//    }
-    
     private func setUpImageView() {
         let dimensions = self.frame.height * 0.10
         
         let profileImageView = UIImageView()
-        profileImageView.frame = CGRect(x: 0, y: 0, width: dimensions, height: dimensions)
+        profileImageView.frame = CGRect(x: dimensions, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
         profileImageView.backgroundColor = UIColor.red
-        self.headerView.addSubview(profileImageView)
+        self.contentView.addSubview(profileImageView)
     }
     
     
