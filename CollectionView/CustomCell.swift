@@ -8,12 +8,13 @@
 
 import UIKit
 
+
 class CustomCell: UICollectionViewCell {
     
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerView: UIView!
     
-
+    let profileImageView = UIImageView()
     
     func setUpCell() {
  
@@ -53,7 +54,6 @@ class CustomCell: UICollectionViewCell {
     private func setUpImageView() {
         let dimensions = self.frame.height * 0.10
         
-        let profileImageView = UIImageView()
         profileImageView.frame = CGRect(x: dimensions/2, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
         profileImageView.backgroundColor = UIColor.red
         profileImageView.layer.masksToBounds = false
