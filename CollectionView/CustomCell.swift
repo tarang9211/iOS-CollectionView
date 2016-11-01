@@ -58,6 +58,8 @@ class CustomCell: UICollectionViewCell {
         profileImageView.backgroundColor = UIColor.red
         profileImageView.layer.masksToBounds = false
         profileImageView.layer.cornerRadius = dimensions/2
+        profileImageView.layer.shouldRasterize = false
+        
         self.contentView.addSubview(profileImageView)
     }
     
