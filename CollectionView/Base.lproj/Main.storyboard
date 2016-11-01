@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q7c-Ns-NhP">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q7c-Ns-NhP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,32 +34,18 @@
                                                 <constraint firstAttribute="height" constant="128" id="OaR-x1-OFi"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-jT-9nx">
-                                            <frame key="frameInset" minX="33" minY="131" width="50" height="50"/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="WKr-ch-ELR"/>
-                                                <constraint firstAttribute="height" constant="50" id="XY0-ju-SRQ"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="DBg-jT-9nx" firstAttribute="top" secondItem="vdH-oR-egz" secondAttribute="bottom" id="4Xl-B4-RIk"/>
                                     <constraint firstItem="vdH-oR-egz" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leading" id="Btj-xS-ckI"/>
                                     <constraint firstAttribute="trailing" secondItem="vdH-oR-egz" secondAttribute="trailing" id="Fn2-g2-hdw"/>
                                     <constraint firstItem="vdH-oR-egz" firstAttribute="top" secondItem="lzK-sN-jFj" secondAttribute="top" id="oiy-6e-Rxi"/>
-                                    <constraint firstItem="DBg-jT-9nx" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leadingMargin" constant="26" id="xPd-eR-14m"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <size key="customSize" width="341" height="333"/>
                                 <connections>
                                     <outlet property="headerView" destination="vdH-oR-egz" id="pEv-z6-JYO"/>
                                     <outlet property="headerViewHeightConstraint" destination="OaR-x1-OFi" id="yQU-EM-QOY"/>
-                                    <outlet property="imageviewHeight" destination="XY0-ju-SRQ" id="pPb-l4-1YF"/>
-                                    <outlet property="imageviewWidth" destination="WKr-ch-ELR" id="7Pi-yQ-0xN"/>
-                                    <outlet property="imageviewleftconstraint" destination="xPd-eR-14m" id="ojX-BN-AKe"/>
-                                    <outlet property="imageviewtopconstraint" destination="4Xl-B4-RIk" id="mfq-O3-Xzc"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

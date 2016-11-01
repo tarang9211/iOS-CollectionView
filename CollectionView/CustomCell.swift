@@ -13,10 +13,7 @@ class CustomCell: UICollectionViewCell {
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerView: UIView!
     
-    @IBOutlet weak var imageviewWidth: NSLayoutConstraint!
-    @IBOutlet weak var imageviewHeight: NSLayoutConstraint!
-    @IBOutlet weak var imageviewtopconstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageviewleftconstraint: NSLayoutConstraint!
+
     
     func setUpCell() {
  
@@ -34,7 +31,7 @@ class CustomCell: UICollectionViewCell {
         self.updateConstraints()
         
         //set up image view
-        setupImageView()
+        setUpImageView()
         
         
         //set up for adding gradient
@@ -56,13 +53,22 @@ class CustomCell: UICollectionViewCell {
     }
     
     //setting up constraints for imageview for a profile image
-    private func setupImageView() {
-        imageviewHeight.constant = self.frame.height * 0.10
-        imageviewWidth.constant = imageviewHeight.constant
-        imageviewtopconstraint.constant = -(imageviewHeight.constant * 0.50)
-        imageviewleftconstraint.constant = imageviewWidth.constant - (imageviewHeight.constant * 0.50)
-        self.updateConstraints()
+//    private func setupImageView() {
+//        imageviewHeight.constant = self.frame.height * 0.10
+//        imageviewWidth.constant = imageviewHeight.constant
+//        imageviewtopconstraint.constant = -(imageviewHeight.constant * 0.50)
+//        imageviewleftconstraint.constant = imageviewWidth.constant - (imageviewHeight.constant * 0.50)
+//        self.updateConstraints()
+//        
+//    }
+    
+    private func setUpImageView() {
+        let dimensions = self.frame.height * 0.10
         
+        let profileImageView = UIImageView()
+        profileImageView.frame = CGRect(x: 0, y: 0, width: dimensions, height: dimensions)
+        profileImageView.backgroundColor = UIColor.red
+        self.headerView.addSubview(profileImageView)
     }
     
     
