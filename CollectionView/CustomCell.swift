@@ -54,8 +54,10 @@ class CustomCell: UICollectionViewCell {
         let dimensions = self.frame.height * 0.10
         
         let profileImageView = UIImageView()
-        profileImageView.frame = CGRect(x: dimensions, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
+        profileImageView.frame = CGRect(x: dimensions/2, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
         profileImageView.backgroundColor = UIColor.red
+        profileImageView.layer.masksToBounds = false
+        profileImageView.layer.cornerRadius = dimensions/2
         self.contentView.addSubview(profileImageView)
     }
     
