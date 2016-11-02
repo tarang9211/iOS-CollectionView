@@ -11,10 +11,11 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
+    @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerView: UIView!
     
-    let profileImageView = UIImageView()
+//    let profileImageView = UIImageView()
     
     func setUpCell() {
  
@@ -51,16 +52,20 @@ class CustomCell: UICollectionViewCell {
         self.headerView.layer.insertSublayer(customGradient, at: 0)
     }
     
+//    private func setUpImageView() {
+//        let dimensions = self.frame.height * 0.10
+//        
+//        profileImageView.frame = CGRect(x: dimensions/2, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
+//        profileImageView.backgroundColor = UIColor.red
+//        profileImageView.layer.masksToBounds = false
+//        profileImageView.layer.cornerRadius = dimensions/2
+//        profileImageView.layer.shouldRasterize = false
+//        
+//        self.contentView.addSubview(profileImageView)
+//    }
+    
     private func setUpImageView() {
-        let dimensions = self.frame.height * 0.10
         
-        profileImageView.frame = CGRect(x: dimensions/2, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
-        profileImageView.backgroundColor = UIColor.red
-        profileImageView.layer.masksToBounds = false
-        profileImageView.layer.cornerRadius = dimensions/2
-        profileImageView.layer.shouldRasterize = false
-        
-        self.contentView.addSubview(profileImageView)
     }
     
     
