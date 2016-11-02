@@ -36,8 +36,10 @@ class CollectionViewController: UICollectionViewController {
         
         //get reference to storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
+
+        cell.setUpCell()
+        cell.profileImageView.image = items[indexPath.row].profileImage
         
-        cell.setUpCell()        
         return cell
     }
     
@@ -58,8 +60,8 @@ class CollectionViewController: UICollectionViewController {
     
     private func populateData() -> [CardData] {
         var data = [CardData]()
-        let userOne = CardData(username: "Tarang Hirani", profileImage: UIImage(), time: "20m ago")
-        let userTwo = CardData(username: "Aditya Yadav", profileImage: UIImage(), time: "5m ago")
+        let userOne = CardData(username: "Tarang Hirani", profileImage: UIImage(named: "profile.png")!, time: "20m ago")
+        let userTwo = CardData(username: "Aditya Yadav", profileImage: UIImage(named: "profile.png")!, time: "5m ago")
         data.append(userOne)
         data.append(userTwo)
         return data
