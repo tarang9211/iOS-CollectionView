@@ -23,8 +23,6 @@ class CustomCell: UICollectionViewCell {
     
     @IBOutlet weak var profileImageViewLeftConstraint: NSLayoutConstraint!
     
-//    let profileImageView = UIImageView()
-    
     func setUpCell() {
  
         //set up for corner radius and shadow
@@ -60,20 +58,8 @@ class CustomCell: UICollectionViewCell {
         self.headerView.layer.insertSublayer(customGradient, at: 0)
     }
     
-//    private func setUpImageView() {
-//        let dimensions = self.frame.height * 0.10
-//        
-//        profileImageView.frame = CGRect(x: dimensions/2, y: (self.headerView.frame.height - (dimensions * 0.50)), width: dimensions, height: dimensions)
-//        profileImageView.backgroundColor = UIColor.red
-//        profileImageView.layer.masksToBounds = false
-//        profileImageView.layer.cornerRadius = dimensions/2
-//        profileImageView.layer.shouldRasterize = false
-//        
-//        self.contentView.addSubview(profileImageView)
-//    }
-    
+    //set up profile image view
     private func setUpImageView() {
-        
         profileImageViewHeight.constant = self.frame.height * 0.10
         profileImageViewWidth.constant = profileImageViewHeight.constant
         profileImageViewTopConstraint.constant = -(0.50 * profileImageViewHeight.constant)
@@ -81,8 +67,6 @@ class CustomCell: UICollectionViewCell {
         profileImageView.backgroundColor = UIColor.red
         profileImageView.layer.cornerRadius = profileImageViewHeight.constant / 2
         profileImageView.layer.shouldRasterize = false
-        
-        
     }
     
     
