@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 private let cellIdentifier = "cell"
-private let items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+private var items = [CardData]()
 
 class CollectionViewController: UICollectionViewController {
     
@@ -19,6 +19,7 @@ class CollectionViewController: UICollectionViewController {
         
         self.customLayout()
         self.collectionView?.backgroundColor = UIColor(red: 236/255, green: 239/255, blue: 241/255, alpha: 1)
+        items = self.populateData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,5 +54,14 @@ class CollectionViewController: UICollectionViewController {
         
         customLayout.itemSize = CGSize(width: screenWidth, height: screenHeight)
         customLayout.minimumLineSpacing = 20
+    }
+    
+    private func populateData() -> [CardData] {
+        var data = [CardData]()
+        let userOne = CardData(username: "Tarang Hirani", profileImage: UIImage(), time: "20m ago")
+        let userTwo = CardData(username: "Aditya Yadav", profileImage: UIImage(), time: "5m ago")
+        data.append(userOne)
+        data.append(userTwo)
+        return data
     }
 }
