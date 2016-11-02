@@ -15,6 +15,7 @@
 		2B96D0601DC11BD40090FEF3 /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D05F1DC11BD40090FEF3 /* CollectionViewUITests.swift */; };
 		2B96D0761DC11DB80090FEF3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D0751DC11DB80090FEF3 /* CollectionViewController.swift */; };
 		2B96D0781DC13C520090FEF3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D0771DC13C520090FEF3 /* CustomCell.swift */; };
+		2BAA343D1DCA744E002068B0 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA343C1DCA744E002068B0 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2B96D0611DC11BD40090FEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B96D0751DC11DB80090FEF3 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		2B96D0771DC13C520090FEF3 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		2BAA343C1DCA744E002068B0 /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2B96D04B1DC11BD40090FEF3 /* Info.plist */,
 				2B96D0751DC11DB80090FEF3 /* CollectionViewController.swift */,
 				2B96D0771DC13C520090FEF3 /* CustomCell.swift */,
+				2BAA343C1DCA744E002068B0 /* CardData.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B96D0761DC11DB80090FEF3 /* CollectionViewController.swift in Sources */,
+				2BAA343D1DCA744E002068B0 /* CardData.swift in Sources */,
 				2B96D0781DC13C520090FEF3 /* CustomCell.swift in Sources */,
 				2B96D0401DC11BD40090FEF3 /* AppDelegate.swift in Sources */,
 			);
@@ -507,6 +511,7 @@
 				2B96D0661DC11BD40090FEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B96D0671DC11BD40090FEF3 /* Build configuration list for PBXNativeTarget "CollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				2B96D0691DC11BD40090FEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B96D06A1DC11BD40090FEF3 /* Build configuration list for PBXNativeTarget "CollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				2B96D06C1DC11BD40090FEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
