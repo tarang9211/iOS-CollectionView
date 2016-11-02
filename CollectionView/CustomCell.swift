@@ -64,7 +64,7 @@ class CustomCell: UICollectionViewCell {
         profileImageViewWidth.constant = profileImageViewHeight.constant
         profileImageViewTopConstraint.constant = -(0.50 * profileImageViewHeight.constant)
         profileImageViewLeftConstraint.constant = (0.50 * profileImageViewWidth.constant)
-        profileImageView.backgroundColor = UIColor.red
+        //profileImageView.backgroundColor = UIColor.red
         profileImageView.layer.cornerRadius = profileImageViewHeight.constant / 2
         profileImageView.layer.shouldRasterize = false
     }
