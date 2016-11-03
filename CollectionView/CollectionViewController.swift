@@ -38,7 +38,7 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
         cell.setUpCell()
         cell.profileImageView.image = items[indexPath.row].profileImage
-        
+        cell.usernameLabel.text = items[indexPath.row].username
         return cell
     }
     

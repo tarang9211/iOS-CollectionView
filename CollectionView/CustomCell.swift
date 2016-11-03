@@ -11,6 +11,8 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
+    @IBOutlet weak var usernameLabelLeftConstraint: NSLayoutConstraint!
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerView: UIView!
@@ -37,8 +39,10 @@ class CustomCell: UICollectionViewCell {
         
         self.createGradient()
         
-        self.setNeedsLayout()
+        //override left constraint for username label
+        self.usernameLabelLeftConstraint.constant = (0.75 * (UIScreen.main.bounds.height * 0.09))
         
+        self.setNeedsLayout()
     }
     
     //set up gradient for header view
@@ -60,11 +64,7 @@ class CustomCell: UICollectionViewCell {
         profileImageViewWidth.constant = profileImageViewHeight.constant
         profileImageViewTopConstraint.constant = -(0.50 * profileImageViewHeight.constant)
         profileImageViewLeftConstraint.constant = (0.50 * profileImageViewWidth.constant)
-        //profileImageView.backgroundColor = UIColor.red
         profileImageView.layer.cornerRadius = profileImageViewHeight.constant / 2
         profileImageView.layer.shouldRasterize = false
     }
-    
-    
-    
 }

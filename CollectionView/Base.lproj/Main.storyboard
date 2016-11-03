@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q7c-Ns-NhP">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q7c-Ns-NhP">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,14 +30,27 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdH-oR-egz">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="128"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pg-u4-Usa">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="v1J-et-Esv"/>
+                                                        <constraint firstAttribute="width" constant="166" id="z2O-oz-J6w"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="7pg-u4-Usa" secondAttribute="trailing" constant="124" id="0AV-oX-zoY"/>
+                                                <constraint firstItem="7pg-u4-Usa" firstAttribute="top" secondItem="vdH-oR-egz" secondAttribute="top" constant="23" id="Ber-bE-grS"/>
                                                 <constraint firstAttribute="height" constant="128" id="OaR-x1-OFi"/>
+                                                <constraint firstItem="7pg-u4-Usa" firstAttribute="leading" secondItem="vdH-oR-egz" secondAttribute="leading" constant="51" id="es2-ZU-pXX"/>
                                             </constraints>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdn-iZ-0Qg">
-                                            <rect key="frame" x="28" y="129" width="50" height="50"/>
+                                            <frame key="frameInset" minX="28" minY="129" width="50" height="50"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="Ify-AP-Yx8"/>
@@ -66,6 +76,8 @@
                                     <outlet property="profileImageViewLeftConstraint" destination="lAd-MN-uff" id="waG-EI-0Z2"/>
                                     <outlet property="profileImageViewTopConstraint" destination="hh2-Ri-r4v" id="Y1i-Gl-rwB"/>
                                     <outlet property="profileImageViewWidth" destination="Ify-AP-Yx8" id="scI-uq-fDU"/>
+                                    <outlet property="usernameLabel" destination="7pg-u4-Usa" id="3Cr-y9-me7"/>
+                                    <outlet property="usernameLabelLeftConstraint" destination="es2-ZU-pXX" id="3wN-br-eNQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
