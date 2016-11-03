@@ -14,13 +14,9 @@ class CustomCell: UICollectionViewCell {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerView: UIView!
-    
     @IBOutlet weak var profileImageViewWidth: NSLayoutConstraint!
-    
     @IBOutlet weak var profileImageViewHeight: NSLayoutConstraint!
-    
     @IBOutlet weak var profileImageViewTopConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var profileImageViewLeftConstraint: NSLayoutConstraint!
     
     func setUpCell() {
@@ -35,7 +31,7 @@ class CustomCell: UICollectionViewCell {
         self.layer.masksToBounds = false;
         
         //set up for header view
-        self.headerViewHeightConstraint.constant = self.frame.height * 0.25
+        self.headerViewHeightConstraint.constant = UIScreen.main.bounds.height * 0.175
         
         self.setUpImageView()
         
@@ -60,7 +56,7 @@ class CustomCell: UICollectionViewCell {
     
     //set up profile image view
     private func setUpImageView() {
-        profileImageViewHeight.constant = self.frame.height * 0.10
+        profileImageViewHeight.constant = UIScreen.main.bounds.height * 0.09
         profileImageViewWidth.constant = profileImageViewHeight.constant
         profileImageViewTopConstraint.constant = -(0.50 * profileImageViewHeight.constant)
         profileImageViewLeftConstraint.constant = (0.50 * profileImageViewWidth.constant)

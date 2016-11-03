@@ -36,7 +36,6 @@ class CollectionViewController: UICollectionViewController {
         
         //get reference to storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
-
         cell.setUpCell()
         cell.profileImageView.image = items[indexPath.row].profileImage
         
@@ -60,10 +59,15 @@ class CollectionViewController: UICollectionViewController {
     
     private func populateData() -> [CardData] {
         var data = [CardData]()
-        let userOne = CardData(username: "Tarang Hirani", profileImage: UIImage(named: "profile.png")!, time: "20m ago")
-        let userTwo = CardData(username: "Aditya Yadav", profileImage: UIImage(named: "profile.png")!, time: "5m ago")
-        data.append(userOne)
-        data.append(userTwo)
+        data.append(CardData(username: "Tarang Hirani", profileImage: UIImage(named: "profile.png")!, time: "20m ago"))
+        data.append(CardData(username: "Aditya Yadav", profileImage: UIImage(named: "profile.png")!, time: "5m ago"))
+        data.append(CardData(username: "John Doe", profileImage: UIImage(named: "profile.png")!, time: "10m ago"))
+        data.append(CardData(username: "Andy Smith", profileImage: UIImage(named: "profile.png")!, time: "1h ago"))
+        data.append(CardData(username: "Jack Rider", profileImage: UIImage(named: "profile.png")!, time: "2d ago"))
+        data.append(CardData(username: "Michelle Walker", profileImage: UIImage(named: "profile.png")!, time: "10d ago"))
+        data.append(CardData(username: "Tim Blind", profileImage: UIImage(named: "profile.png")!, time: "2d ago"))
+        data.append(CardData(username: "David Langan", profileImage: UIImage(named: "profile.png")!, time: "36s ago"))
+        data.append(CardData(username: "Alex Morgan", profileImage: UIImage(named: "profile.png")!, time: "40m ago"))
         return data
     }
 }
