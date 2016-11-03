@@ -59,15 +59,15 @@ class CollectionViewController: UICollectionViewController {
     
     private func populateData() -> [CardData] {
         var data = [CardData]()
-        data.append(CardData(username: "Tarang Hirani", profileImage: UIImage(named: "profile.png")!, time: "20m ago"))
-        data.append(CardData(username: "Aditya Yadav", profileImage: UIImage(named: "profile.png")!, time: "5m ago"))
-        data.append(CardData(username: "John Doe", profileImage: UIImage(named: "profile.png")!, time: "10m ago"))
-        data.append(CardData(username: "Andy Smith", profileImage: UIImage(named: "profile.png")!, time: "1h ago"))
-        data.append(CardData(username: "Jack Rider", profileImage: UIImage(named: "profile.png")!, time: "2d ago"))
-        data.append(CardData(username: "Michelle Walker", profileImage: UIImage(named: "profile.png")!, time: "10d ago"))
-        data.append(CardData(username: "Tim Blind", profileImage: UIImage(named: "profile.png")!, time: "2d ago"))
-        data.append(CardData(username: "David Langan", profileImage: UIImage(named: "profile.png")!, time: "36s ago"))
-        data.append(CardData(username: "Alex Morgan", profileImage: UIImage(named: "profile.png")!, time: "40m ago"))
+        data.append(CardData(username: "Tarang Hirani", profileImage: UIImage(named: "profile.png")!, time: "20m"))
+        data.append(CardData(username: "Aditya Yadav", profileImage: UIImage(named: "profile.png")!, time: "5m"))
+        data.append(CardData(username: "John Doe", profileImage: UIImage(named: "profile.png")!, time: "10m"))
+        data.append(CardData(username: "Andy Smith", profileImage: UIImage(named: "profile.png")!, time: "1h"))
+        data.append(CardData(username: "Jack Rider", profileImage: UIImage(named: "profile.png")!, time: "2d"))
+        data.append(CardData(username: "Michelle Walker", profileImage: UIImage(named: "profile.png")!, time: "10d"))
+        data.append(CardData(username: "Tim Blind", profileImage: UIImage(named: "profile.png")!, time: "2d"))
+        data.append(CardData(username: "David Langan", profileImage: UIImage(named: "profile.png")!, time: "36s"))
+        data.append(CardData(username: "Alex Morgan", profileImage: UIImage(named: "profile.png")!, time: "40m"))
         return data
     }
 }
