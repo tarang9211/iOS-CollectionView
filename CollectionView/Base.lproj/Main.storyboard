@@ -68,11 +68,20 @@
                                                 <constraint firstAttribute="height" constant="50" id="o8J-Aa-TR8"/>
                                             </constraints>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-aT-bDb">
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="Buq-xd-L5W"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="vdH-oR-egz" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leading" id="Btj-xS-ckI"/>
                                     <constraint firstAttribute="trailing" secondItem="vdH-oR-egz" secondAttribute="trailing" id="Fn2-g2-hdw"/>
+                                    <constraint firstItem="k9t-aT-bDb" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leading" id="OGF-Vl-Ccq"/>
+                                    <constraint firstAttribute="bottom" secondItem="k9t-aT-bDb" secondAttribute="bottom" id="QSJ-pm-ECj"/>
+                                    <constraint firstAttribute="trailing" secondItem="k9t-aT-bDb" secondAttribute="trailing" id="f0M-PM-oSg"/>
                                     <constraint firstItem="Xdn-iZ-0Qg" firstAttribute="top" secondItem="vdH-oR-egz" secondAttribute="bottom" constant="-22" id="hh2-Ri-r4v"/>
                                     <constraint firstItem="Xdn-iZ-0Qg" firstAttribute="leading" secondItem="lzK-sN-jFj" secondAttribute="leadingMargin" constant="24" id="lAd-MN-uff"/>
                                     <constraint firstItem="vdH-oR-egz" firstAttribute="top" secondItem="lzK-sN-jFj" secondAttribute="top" id="oiy-6e-Rxi"/>
