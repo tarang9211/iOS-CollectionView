@@ -39,6 +39,7 @@ class CollectionViewController: UICollectionViewController {
         cell.setUpCell()
         cell.profileImageView.image = items[indexPath.row].profileImage
         cell.usernameLabel.text = items[indexPath.row].username
+        cell.timeLabel.text = items[indexPath.row].time + " ago"
         return cell
     }
     

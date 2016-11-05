@@ -10,6 +10,7 @@ import UIKit
 
 
 class CustomCell: UICollectionViewCell {
+    @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var usernameLabelLeftConstraint: NSLayoutConstraint!
     @IBOutlet weak var usernameLabel: UILabel!
