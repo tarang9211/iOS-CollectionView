@@ -21,43 +21,13 @@ class CustomCell: UICollectionViewCell {
     @IBOutlet weak var profileImageViewHeight: NSLayoutConstraint!
     @IBOutlet weak var profileImageViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var profileImageViewLeftConstraint: NSLayoutConstraint!
-    
-    //footerview
     @IBOutlet weak var footerView: UIView!
     
     
     func setUpCell(indexpath: IndexPath) {
- 
-        
-        
-        //gradient 1
-        let customGradient = CAGradientLayer()
-        let colorOne = UIColor(red: 22/255, green: 34/255, blue: 42/255, alpha: 1).cgColor
-        let colorTwo = UIColor(red: 58/255, green: 96/255, blue: 115/255, alpha: 1).cgColor
-        customGradient.colors = [colorOne, colorTwo]
-        customGradient.locations = [0.0, 0.5, 1.0]
-        customGradient.startPoint = CGPoint(x: 0.0, y: 1.0)
-        customGradient.endPoint = CGPoint(x: 1.0, y: 1.0)
-        customGradient.frame = self.footerView.bounds
-        
-        //gradient 2
-        let customGradienttwo = CAGradientLayer()
-        let colorOnetwo = UIColor(red: 29/255, green: 43/255, blue: 100/255, alpha: 1).cgColor
-        let colorTwotwo = UIColor(red: 248/255, green: 205/255, blue: 218/255, alpha: 1).cgColor
-        customGradienttwo.colors = [colorOnetwo, colorTwotwo]
-        customGradienttwo.locations = [0.0, 0.5, 1.0]
-        customGradienttwo.startPoint = CGPoint(x: 0.0, y: 1.0)
-        customGradienttwo.endPoint = CGPoint(x: 1.0, y: 1.0)
-        customGradienttwo.frame = self.footerView.bounds
-        
-        if(indexpath.row % 2 == 1){
-            footerView.layer.addSublayer(customGradient)
-        }
-        else{
-            footerView.layer.addSublayer(customGradienttwo)
-        }
-        
-        
+        //footerview background color
+        let colorOne = UIColor(red: 0/255, green: 88/255, blue: 166/255, alpha: 1)
+        footerView.backgroundColor = colorOne
         
         //set up for corner radius and shadow
         self.contentView.layer.backgroundColor = UIColor.white.cgColor
