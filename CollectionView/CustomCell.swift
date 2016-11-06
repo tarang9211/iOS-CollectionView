@@ -51,8 +51,8 @@ class CustomCell: UICollectionViewCell {
     //set up gradient for header view
     private func createGradient() {
         let customGradient = CAGradientLayer()
-        let colorOne = UIColor(red: 255/255, green: 138/255, blue: 150/255, alpha: 1).cgColor
-        let colorTwo = UIColor(red: 255/255, green: 0/255, blue: 102/255, alpha: 1).cgColor
+        let colorOne = UIColor(red: 255/255, green: 0/255, blue: 102/255, alpha: 1).cgColor
+        let colorTwo = UIColor(red: 255/255, green: 138/255, blue: 150/255, alpha: 1).cgColor
         customGradient.colors = [colorOne, colorTwo]
         customGradient.locations = [0.0, 0.5, 1.0]
         customGradient.startPoint = CGPoint(x: 0.0, y: 1.0)
