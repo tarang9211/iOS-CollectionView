@@ -36,7 +36,7 @@ class CollectionViewController: UICollectionViewController {
         
         //get reference to storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCell
-        cell.setUpCell()
+        cell.setUpCell(indexpath: indexPath)
         cell.profileImageView.image = items[indexPath.row].profileImage
         cell.usernameLabel.text = items[indexPath.row].username
         cell.timeLabel.text = items[indexPath.row].time + " ago"
