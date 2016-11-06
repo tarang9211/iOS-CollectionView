@@ -69,11 +69,11 @@
                                                 <constraint firstAttribute="height" constant="50" id="o8J-Aa-TR8"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-aT-bDb">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-aT-bDb" customClass="FooterView" customModule="CollectionView" customModuleProvider="target">
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="5" id="Buq-xd-L5W"/>
-                                                <constraint firstAttribute="width" secondItem="k9t-aT-bDb" secondAttribute="height" multiplier="341:5" id="HLp-EH-QrT"/>
+                                                <constraint firstAttribute="height" constant="50" id="Buq-xd-L5W"/>
+                                                <constraint firstAttribute="width" secondItem="k9t-aT-bDb" secondAttribute="height" multiplier="341:50" id="HLp-EH-QrT"/>
                                             </constraints>
                                         </view>
                                     </subviews>
