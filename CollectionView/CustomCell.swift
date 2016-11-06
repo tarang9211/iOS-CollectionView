@@ -25,9 +25,6 @@ class CustomCell: UICollectionViewCell {
     
     
     func setUpCell(indexpath: IndexPath) {
-        //footerview background color
-        let colorOne = UIColor(red: 0/255, green: 88/255, blue: 166/255, alpha: 1)
-        footerView.backgroundColor = colorOne
         
         //set up for corner radius and shadow
         self.contentView.layer.backgroundColor = UIColor.white.cgColor
