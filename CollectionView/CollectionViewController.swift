@@ -18,7 +18,7 @@ class CollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         self.customLayout()
-        self.collectionView?.backgroundColor = UIColor(red: 236/255, green: 239/255, blue: 241/255, alpha: 1)
+        self.collectionView?.backgroundColor = UIColor.fromHex(hex: "#ECEFF1", alpha: 1)
         items = self.populateData()
     }
     

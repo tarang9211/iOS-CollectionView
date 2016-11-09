@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-private let colorOne = UIColor(red: 58/255, green: 97/255, blue: 134/255, alpha: 1).cgColor
-private let colorTwo = UIColor(red: 137/255, green: 37/255, blue: 62/255, alpha: 1).cgColor
+private let colorOne = UIColor.fromHex(hex: "#3A6186", alpha: 1).cgColor
+private let colorTwo = UIColor.fromHex(hex: "#89253E", alpha: 1).cgColor
 
 class FooterView: UIView {
     
